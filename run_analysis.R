@@ -70,4 +70,5 @@ tidy_data <- separate(data = tidy_data, col = variable, into = c("variable", "me
 # Delete the variable measure, since is repeate
 tidy_data$measure <- NULL
 
-write.csv(tidy_data, '/home/anasapata/Personal/datasciencecoursera/Getting and Cleaning Data/Week4/GettingAndCleaningData_Coursera_CourseProject/tidy_data.csv')
+write.csv(tidy_data, '/home/anasapata/Personal/datasciencecoursera/Getting and Cleaning Data/Week4/GettingAndCleaningData_Coursera_CourseProject/tidy_data.csv',
+          row.names = FALSE)
