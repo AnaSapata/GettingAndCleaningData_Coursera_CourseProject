@@ -51,6 +51,7 @@ final_data <- all_data[,sort(index_columns)]
 activities <- read.table('/home/anasapata/Personal/datasciencecoursera/Getting and Cleaning Data/Week4/UCI HAR Dataset/activity_labels.txt',
                          stringsAsFactors = FALSE)
 
+# Merge of data sets final_data and activities
 final_data_w_act <- merge(final_data, activities, by.x = "Activity", by.y = "V1")
 # Remove the variable activity since is integer type
 final_data_w_act$Activity <- NULL

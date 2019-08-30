@@ -1,0 +1,21 @@
+The script created containd the following variables:
+
+* x_test - Contain the data set X_test cointained in the zip file
+* y_test - Contain the data set y_test cointained in the zip file
+* subject_test - Contain the data set subject_test cointained in the zip file
+* test - The merge of the previous test sets was saved in this variable
+* x_train - Contain the data set X_train cointained in the zip file
+* y_train - Contain the data set y_train cointained in the zip file
+* subject_train - Contain the data set subject_train cointained in the zip file
+* train - The merge of the previous train sets was saved in this variable
+* all_data - Merge of the sets test and train
+* features - Data with the features names
+* mean_index - Index of the columns which the name contain the pattern "-mean()"
+* std_index -  Index of the columns which the name contain the pattern "-std()"
+* index_columns - Vector that contain the mean_index and std_index, as well as the index of the first and last column, 1 and 563, respectively
+* final_data - Set that contains all the data (test and train) from the variables Subject, Activity and all related with mean and standard deviation
+* activities - Data with the activity names
+* final_data_w_act - Set with the merge of final_data and activities sets
+* mean_index_2 - Index of columns which the name contain the pattern "-mean()" from the final_data_w_act set
+* final_data_w_act_mean - Set with all the data (test and train) but only the variables Subject, Activity and all related with mean
+* tidy_data - Set final_data_w_act_mean but in tidy data format
