@@ -68,3 +68,5 @@ tidy_data <- gather(final_data_w_act_mean, variable, mean, -Activity, -Subject)
 tidy_data <- separate(data = tidy_data, col = variable, into = c("variable", "measure", "axis"))
 # Delete the variable measure, since is repeate
 tidy_data$measure <- NULL
+
+write.csv(tidy_data, '/home/anasapata/Personal/datasciencecoursera/Getting and Cleaning Data/Week4/GettingAndCleaningData_Coursera_CourseProject/tidy_data.csv')
